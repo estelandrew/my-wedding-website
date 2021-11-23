@@ -8,14 +8,16 @@ $color-main-red: #f68d6f;
 }
 
 body {
+  margin: 0;
   font-family: $font-sans;
   text-align: center;
   background-color: #f6f6f7;
+  box-sizing: border-box;
 }
 
 nav {
   ul {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0 0;
     padding: 0;
   }
 
@@ -23,13 +25,25 @@ nav {
     list-style: none;
     display: inline-block;
     margin: 0;
-    min-width: 7rem;
+    min-width: 5rem;
+    font-size: 0.825rem;
+    @media (min-width: 350px) {
+      font-size: 1rem;
+      min-width: 7rem;
+    }
 
     a {
       text-decoration: none;
       color: #666;
       font-weight: 700;
     }
+  }
+}
+
+main {
+  min-height: calc(100vh - 10rem);
+  @media (min-width: 481px) {
+    min-height: calc(100vh - 12rem);
   }
 }
 
@@ -46,4 +60,53 @@ footer {
   padding: 0;
   height: 5rem;
   line-height: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 700;
+
+  &:hover {
+    color: #5f8575;
+    transition: 250ms;
+  }
+}
+
+span.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #5f8575;
+  min-width: 12rem;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 5px;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 250ms;
+  }
+}
+
+div.flex-container {
+  @media (min-width: 769px) {
+    display: flex;
+    width: 75%;
+    max-width: 35rem;
+    margin: 2rem auto 0 auto;
+    .flex-item {
+      width: 50%;
+      padding: 0 1rem 0 1rem;
+      justify-content: center;
+    }
+  }
+  @media (min-width: 900px) {
+    width: 50%;
+  }
 }

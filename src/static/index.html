@@ -4,33 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
     <title>Christine & Andy</title>
   </head>
   <body>
     <header>
-      <h1 class="fancy">Christine & Andy</h1>
-      <nav>
-        <ul>
+      <div class="header-container">
+        <h1 class="fancy"><a href="./">Christine & Andy</a></h1>
+        <nav>
           <ul>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Accomodations</a></li>
-            <li><a href="#">Registry</a></li>
+            <li><a href="./schedule">Schedule</a></li>
+            <li><a href="./accomodations">Accomodations</a></li>
+            <li><a href="./registry">Registry</a></li>
           </ul>
-        </ul>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="hero-container">
-        <img class="hero-image" src="img/hero-3.jpg" alt="hero" />
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/hero.jpg" />
+          <source media="(min-width:769px)" srcset="img/hero-large.jpg" />
+          <source media="(min-width:481px)" srcset="img/hero-medium.jpg" />
+          <source media="(max-width:480px)" srcset="img/hero-small.jpg" />
+          <img class="hero-image" src="img/hero.jpg" alt="Picture of Andy & Christine" />
+        </picture>
+        <!-- <img class="hero-image" src="img/hero.jpg" alt="Picture of Andy & Christine" /> -->
         <span class="hero-date">6 &bull; 4 &bull; 22</span>
       </div>
 
       <div class="home-section-container">
         <div class="grid-item grid-item-1">
-          <img class="home-section-image home-section-image-1" src="./img/tall-1.jpg" />
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/ring.jpg" />
+            <source media="(min-width:769px)" srcset="img/ring-large.jpg" />
+            <source media="(min-width:481px)" srcset="img/ring-medium.jpg" />
+            <source media="(max-width:480px)" srcset="img/ring-small.jpg" />
+            <img class="home-section-image home-section-image-1" src="./img/ring.jpg" alt="Engagement ring" />
+          </picture>
+          <!-- <img class="home-section-image home-section-image-1" src="./img/ring.jpg" alt="Engagement ring" /> -->
         </div>
         <div class="grid-item grid-item-2">
           <div class="text-container">
@@ -38,16 +54,23 @@
             <div>Saturday, June 4th, 2022</div>
             <div>in Cincinnati, OH</div>
             <h3 class="fancy">Ceremony:</h3>
-            <span>
+            <div>
               Saint Ursula Academy<br />
               339 E McMillan St,<br />
               Cincinnati, OH 45206
-            </span>
+            </div>
             <h3 class="fancy">Reception:</h3>
-            <span>
+            <div>
               Little Miami Brewing Event Center<br />
               208 Mill Street,<br />
               Milford, Ohio 45150
+            </div>
+            <span class="btn">
+              <a href="./schedule">More details &rarr;</a>
+            </span>
+            <br />
+            <span class="btn">
+              <a href="./accomodations">Accomodations &rarr;</a>
             </span>
           </div>
         </div>
@@ -55,28 +78,42 @@
 
       <div class="home-section-container home-section-container-reversed">
         <div class="grid-item grid-item-1">
-          <img class="home-section-image home-section-image-2" src="./img/tall-2.jpg" />
+          <picture>
+            <source media="(min-width:769px)" srcset="img/our-story.jpg" />
+            <source media="(min-width:481px)" srcset="img/our-story-medium.jpg" />
+            <source media="(max-width:480px)" srcset="img/our-story-small.jpg" />
+            <img class="home-section-image home-section-image-2" src="./img/our-story.jpg" alt="Picture of Andy & Christine" />
+          </picture>
+          <!-- <img class="home-section-image home-section-image-2" src="./img/our-story.jpg" alt="Picture of Andy & Christine" /> -->
         </div>
         <div class="grid-item grid-item-2">
           <div class="text-container">
             <h2 class="fancy">Our Story</h2>
             <div>
-              <p>It was May 2017. The app was OkCupid. Andy sent a message to a cute girl, inquiring about her favorite podcasts. She responded with a quick rundown of her favs and introduced herself as Christine. After a few more messages sent back and forth covering the usual getting-to-know-you topics, Andy and Christine agreed to meet up at Arch City Tavern in the Short North of Columbus. It of course went well! And so a second date was agreed to at Easton Town Center, where they ate Condado Tacos and sat by Central Park Fountain, enjoying a couple hours of conversation.</p>
+              <p>It was May 2017. The app was <i>OkCupid</i>. Andy sent a message to a cute girl, inquiring about her favorite podcasts. She responded with a quick rundown of her favs and introduced herself as Christine. After a few more messages sent back and forth covering the usual getting-to-know-you topics, Andy and Christine agreed to meet up at Arch City Tavern in the Short North of Columbus. It of course went well! And so a second date was agreed to at Easton Town Center, where they ate Condado Tacos and sat by Central Park Fountain, enjoying a few hours of conversation.</p>
               <p>That summer, since Christine and Andy both worked near Easton, they began meeting up there every week on Wednesdays to have dinner and maybe do a crossword puzzle or three. The next four years were full of many dates, trivia and game nights, brewery visits, day trips around Ohio, vacations to Michigan and the Virgin Islands, and not to mention a global pandemic. Then, on an evening in June, Andy and Christine went to Easton for a Saturday date night. After leaving Pins Mechanical Co., Andy suggested they walk in the direction of the fountain where they talked on their second date. They sat down on a bench and it was there that Andy asked the girl who had become both his best friend and love of his life to marry him. And she said yes.</p>
             </div>
+            <span class="btn">Photos &rarr;</span><br />
+            <span class="btn">Registry &rarr;</span>
           </div>
         </div>
       </div>
-
-      <img class="home-bottom-image" src="./img/bottom.jpg" />
+      <picture>
+        <source media="(min-width:1200px)" srcset="img/footer.jpg" />
+        <source media="(min-width:769px)" srcset="img/footer-large.jpg" />
+        <source media="(min-width:481px)" srcset="img/footer-medium.jpg" />
+        <source media="(max-width:480px)" srcset="img/footer-small.jpg" />
+        <img class="home-bottom-image" src="./img/footer.jpg" alt="Picture of Andy & Christine" />
+      </picture>
+      <!-- <img class="home-bottom-image" src="./img/footer.jpg" alt="Picture of Andy & Christine" /> -->
     </main>
     <footer>
       <nav>
         <ul>
           <ul>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Accomodations</a></li>
-            <li><a href="#">Registry</a></li>
+            <li><a href="./schedule">Schedule</a></li>
+            <li><a href="./accomodations">Accomodations</a></li>
+            <li><a href="./registry">Registry</a></li>
           </ul>
         </ul>
       </nav>

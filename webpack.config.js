@@ -11,7 +11,7 @@ module.exports = (env, argv) => {
       entry: "./index.js",
       output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, "src/js")
+        path: path.resolve(__dirname, "src/bundle")
       },
       devServer: {
         static: {
