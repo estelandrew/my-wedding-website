@@ -97,8 +97,8 @@ span.btn {
 div.flex-container {
   @media (min-width: 769px) {
     display: flex;
-    width: 75%;
-    max-width: 35rem;
+    width: 100%;
+    max-width: 40rem;
     margin: 2rem auto 0 auto;
     .flex-item {
       width: 50%;
