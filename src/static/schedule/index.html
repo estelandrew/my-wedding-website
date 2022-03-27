@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>   
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../main.css" />
-    <title>Christine & Andy | Schedule</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://kit.fontawesome.com/7c6fcbeabe.js" crossorigin="anonymous"></script>
+    <title>Christine & Andy | Home</title>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <h1 class="fancy"><a href="../">Christine & Andy</a></h1>
-        <nav>
-          <ul>
-            <li><a href="../schedule">Schedule</a></li>
-            <li><a href="../accomodations">Accomodations</a></li>
-            <li><a href="../registry">Registry</a></li>
-          </ul>
-        </nav>
+        <h1 class="fancy"><a href="./">Christine & Andy</a></h1>
+        <div class="nav-wrapper">
+          <nav>
+            <ul>
+              <li><a href="./schedule">Schedule</a></li>
+              <li><a href="./accomodations">Accomodations</a></li>
+              <li><a href="./registry">Registry</a></li>
+              <li class="rsvp-link"><a href="https://www.zola.com/wedding/metzgersims2022/rsvp" target="_blank">RSVP <i class="fas fa-external-link-alt"></i></a></li>
+            </ul>          
+          </nav>          
+          <div class="mobile-menu-close-button"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="mobile-menu" onclick="openMenu()"><i class="fas fa-bars"></i></div>
       </div>
     </header>
     <main>
