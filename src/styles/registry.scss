@@ -1,0 +1,39 @@
+div.reg-wrapper {
+    padding-top: 2rem;
+    margin: 0 auto;
+    h2 {
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #f68d6f;
+      width: 15rem;
+      margin: 0 auto 1rem auto;
+    }
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+    div.reg-container {
+        width: 66%;
+        height: 11rem;
+        max-width: 20rem;
+        margin: 2rem auto 0 auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 2rem;
+        position: static;
+        img {
+            width: 100%;
+            &.first-image {
+                margin-top: 2rem;
+            }
+        }
+        span.btn {
+            margin-top: 1rem;
+        }
+    }
+    @media (min-width: 481px) {        
+        width: 75%;
+    }
+    @media (min-width: 769px) {
+        width: 40%;
+    }
+  }
+  

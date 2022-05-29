@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles_032822.css" />
     <script src="https://kit.fontawesome.com/7c6fcbeabe.js" crossorigin="anonymous"></script>
     <title>Christine & Andy | Home</title>
   </head>
@@ -19,31 +19,67 @@
         <div class="nav-wrapper">
           <nav>
             <ul>
-              <li><a href="./schedule">Schedule</a></li>
-              <li><a href="./accomodations">Accomodations</a></li>
-              <li><a href="./registry">Registry</a></li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="accomodations.html">Accomodations</a></li>
+              <li><a href="registry.html">Registry</a></li>
               <li class="rsvp-link"><a href="https://www.zola.com/wedding/metzgersims2022/rsvp" target="_blank">RSVP <i class="fas fa-external-link-alt"></i></a></li>
             </ul>          
           </nav>          
           <div class="mobile-menu-close-button"><i class="fas fa-times"></i></div>
         </div>
-        <div class="mobile-menu" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+        <div class="mobile-menu"><i class="fas fa-bars"></i></div>
       </div>
     </header>
     <main>
-      <h3 class="fancy">Registry coming soon</h3>
+      <div class="reg-wrapper">
+        <h2 class="fancy">Registry</h2>
+        <div class="reg-container">
+          <div class="reg-container-inner">
+            <img class="first-image" src="img/cratebarrel.svg.png">
+            <span class="btn"><a target="_blank" href="https://www.crateandbarrel.com/gift-registry/christine-metzger-and-andy-sims/r6421049">Go to registry &rarr;</a></span>
+          </div>
+        </div>
+        <div class="reg-container">
+          <div class="reg-container-inner">
+            <img src="img/bedbathbeyond.svg.png">
+            <span class="btn"><a target="_blank" href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/550985693?eventType=Wedding">Go to registry &rarr;</a></span>
+          </div>
+        </div>
+        <div class="reg-container">
+          <div class="reg-container-inner">
+            <img src="img/amazon.svg.png">
+            <span class="btn"><a target="_blank" href="https://www.amazon.com/wedding/christine-metzger-andy-sims-cincinnati-oh-june-2022/registry/1XC0RGH3WNK9L">Go to registry &rarr;</a></span>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <nav>
         <ul>
           <ul>
-            <li><a href="../schedule">Schedule</a></li>
-            <li><a href="../accomodations">Accomodations</a></li>
-            <li><a href="../registry">Registry</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="accomodations.html">Accomodations</a></li>
+            <li><a href="registry.html">Registry</a></li>
           </ul>
         </ul>
       </nav>
     </footer>
-    <script src="../bundle.js"></script>
+    <script src="bundle.js"></script>
+    <script>
+      const nav = document.querySelector(".nav-wrapper");
+      const body = document.querySelector("body");
+      function openMenu() {
+          nav.classList.add("menu-open");
+          body.classList.add("menu-open");
+      }
+      function closeMenu() {
+          nav.classList.remove("menu-open");
+          body.classList.remove("menu-open");
+      }
+      const menuButton = document.querySelector(".mobile-menu");
+      const closeButton = document.querySelector(".mobile-menu-close-button");
+      menuButton.addEventListener("click", openMenu);
+      closeButton.addEventListener("click", closeMenu);
+    </script>
   </body>
 </html>

@@ -9,4 +9,13 @@ div.acco-wrapper {
   h3 {
     margin-bottom: 0.5rem;
   }
+  p {
+    text-align: left; 
+    width: 90%;
+    margin: 0 auto;
+    @media (min-width: 769px) {
+      width: 66%;
+      max-width: 50rem;
+    }
+  }
 }

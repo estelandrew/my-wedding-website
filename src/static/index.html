@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles_032822.css" />
     <script src="https://kit.fontawesome.com/7c6fcbeabe.js" crossorigin="anonymous"></script>
     <title>Christine & Andy | Home</title>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <h1 class="fancy"><a href="/">Christine & Andy</a></h1>
+        <h1 class="fancy"><a href="./">Christine & Andy</a></h1>
         <div class="nav-wrapper">
           <nav>
             <ul>
@@ -27,7 +27,7 @@
           </nav>          
           <div class="mobile-menu-close-button"><i class="fas fa-times"></i></div>
         </div>
-        <div class="mobile-menu" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+        <div class="mobile-menu"><i class="fas fa-bars"></i></div>
       </div>
     </header>
     <main class="text-size-normal">
@@ -62,7 +62,7 @@
             <h3 class="fancy">Ceremony:</h3>
             <div>
               Saint Ursula Academy<br />
-              339 E McMillan St,<br />
+              1339 E McMillan St,<br />
               Cincinnati, OH 45206
             </div>
             <h3 class="fancy">Reception:</h3>
@@ -73,15 +73,15 @@
             </div>
             <br>
             <span class="btn btn-rsvp">
-              <a href="./accomodations">RSVP <i class="fas fa-external-link-alt"></i></a>
+              <a href="https://www.zola.com/wedding/metzgersims2022/rsvp" target="_blank">RSVP <i class="fas fa-external-link-alt"></i></a>
             </span>
             <br><br>
             <span class="btn">
-              <a href="./schedule">More details &rarr;</a>
+              <a href="schedule.html">More details &rarr;</a>
             </span>
             <br>
             <span class="btn">
-              <a href="./accomodations">Accomodations &rarr;</a>
+              <a href="accomodations.html">Accomodations &rarr;</a>
             </span>
             
           </div>
@@ -130,5 +130,21 @@
       </nav>
     </footer>
     <script src="bundle.js"></script>
+    <script>
+      const nav = document.querySelector(".nav-wrapper");
+      const body = document.querySelector("body");
+      function openMenu() {
+          nav.classList.add("menu-open");
+          body.classList.add("menu-open");
+      }
+      function closeMenu() {
+          nav.classList.remove("menu-open");
+          body.classList.remove("menu-open");
+      }
+      const menuButton = document.querySelector(".mobile-menu");
+      const closeButton = document.querySelector(".mobile-menu-close-button");
+      menuButton.addEventListener("click", openMenu);
+      closeButton.addEventListener("click", closeMenu);
+    </script>
   </body>
 </html>
