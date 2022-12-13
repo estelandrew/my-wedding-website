@@ -15,6 +15,31 @@ div.sched-wrapper {
     font-size: 1rem;
   }
 
+  div.parking-info {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 40rem;
+    text-align:left;
+    font-size: .875rem;
+    margin-top: 3rem;
+
+    @media (min-width: 480px) {
+      max-width: 66%;      
+    }
+
+    @media (min-width: 769px) {
+      max-width: 50%;
+    }
+
+    h4 {
+      font-weight: 700;
+    }
+
+    ul {
+      padding-left: 1rem;
+    }
+  }
+
   img {
     width: 100%;
     margin-top: 5rem;
